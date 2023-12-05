@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans:wght@300;400&display=swap");
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*main style*/
+html,
+body {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  color: #747474;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #ababab;
+}
+h1,
+h2,
+h3 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  letter-spacing: -0.3px;
+}
+
+p {
+  text-align: justify;
+}
+
+header {
+  box-shadow: 0 -2px 10px 0 rgba(0, 0, 0, 0.15);
+  background: #f6f8f8;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+/*utility classes*/
+.bg-primary {
+  background: #00bfa5;
+  color: #fff;
+}
+
+.bg-secondary {
+  background: #508fe2;
+  color: #fff;
+}
+
+.bg-dark {
+  background: #313c48;
+  color: #fff;
+}
+
+.container {
+  max-width: 1015px;
+  margin: auto;
+}
+
+.current {
+  color: #00bfa5;
+}
+.text-primary {
+  color: #00bfa5;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.col-2 {
+  flex: 1;
+}
+/* Navbar Section */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.navbar img {
+  height: 33px;
+  width: 268px;
+}
+
+.navbar .main-nav {
+  display: flex;
+}
+
+.navbar .main-nav a {
+  padding: 0 9px;
+}
+
+.navbar .main-nav a:hover {
+  color: #00bfa5;
+}
+
+.navbar .dropdown {
+  position: relative;
+}
+
+.navbar .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  width: 220px;
+  background: #fff;
+  box-shadow: 0 5px 10px 0 #d3cfc9;
+  right: 5px;
+}
+.navbar .dropdown .dropdown-content a {
+  display: block;
+  padding: 12px 16px;
+}
+.navbar .dropdown .dropdown-content a:hover {
+  background: #f6f8f8;
+}
+
+.navbar .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Lead Section */
+.lead {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 309px;
+}
+
+.lead h1 {
+  font-size: 34px;
+  line-height: 44px;
+}
+
+.lead .col-2 p {
+  line-height: 28px;
+}
+
+/* Services Section */
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.services-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 32px;
+  border-radius: 10px;
+  height: 345px;
+  transition: all 0.2s ease 0s;
+  overflow: hidden;
+  box-sizing: inherit;
+}
+
+.services h1 {
+  font-weight: 400;
+  font-size: 26px;
+}
+
+.dropdown-content {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  padding: 0 2em 0 0;
+  -webkit-appearance: none;
+  outline: 0;
+  text-transform: none;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.services select {
+  position: relative;
+  width: 100%;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  padding: 0 2em 0 0;
+  -webkit-appearance: none;
+  outline: 0;
+  text-transform: none;
+  text-decoration: underline;
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+  background: url(https://www.docplanner.com/icons/icon-caret-white.svg)
+    no-repeat 100%;
+}
+
+.services select option {
+  color: #000;
+}
+
+/*brands section*/
+.brands {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.brands .brands-title h1 {
+  line-height: 33.8px;
+  height: 101px;
+  width: 322px;
+  margin: 7px 0 9px 0;
+  padding-right: 26px;
+}
+
+.brands .brands-logos {
+  grid-column: 2 / span 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.brands .brands-logos svg {
+  width: 150px;
+  height: 20px;
+}
+
+.brands .brands-logos svg path {
+  fill: rgba(171, 171, 171, 0.7);
+}
+
+.brands .brands-logos svg path:hover {
+  fill: #00bfa5;
+}
+
+.brands .brands-logos img {
+  width: 150px;
+  height: 28px;
+  filter: grayscale(100%);
+}
+
+.brands .brands-logos img:hover {
+  filter: grayscale(0%);
+}
